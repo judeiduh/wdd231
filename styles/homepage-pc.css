@@ -1,0 +1,72 @@
+@media screen and (min-width: 1440px) {
+
+    header,
+    main,
+    .navigation,
+    footer {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 44px auto;
+    }
+
+    header span {
+        font-size: 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        max-width: 1450px;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+        font-size: 2rem;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1.6rem;
+    }
+
+    .courseFilter li a {
+        font-size: 1.9rem;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-list section h3 {
+        font-size: 2rem;
+    }
+
+    .credit-totals {
+        font-size: 1.7rem;
+    }
+
+    footer p {
+        font-size: 1.7rem;
+    }
+}

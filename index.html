@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | jude Iduh | Wdd231 - BYUI</title>
+    <meta name="description" content="The home page for jude Iduh's WDD231 course at BYUI.">
+    <meta name="author" content="jude Iduh">
+    <meta property="og:title" content="Home Page | Jude Iduh | Wdd231 - BYUI">
+    <meta property="og:description" content="The home page for jude Iduh's WDD231 course at BYUI.">
+    <meta property="og:image" content="https:/judeiduh.github.io/wdd231/images/homepage-screenshot.jpeg">
+    <meta property="og:url" content="https://judeiduh.github.io/wdd231/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Home Page | jude Iduh | Wdd231 - BYUI">
+    <meta name="twitter:description" content="The home page for jude Iduh's WDD231 course at BYUI.">
+    <meta name="twitter:image" content="https://jude Iduh.github.io/wdd231/images/homepage-screenshot.jpeg">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/homepage-mobile.css">
+    <link rel="stylesheet" href="styles/homepage-tablet.css">
+    <link rel="stylesheet" href="styles/homepage-pc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/Date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/Commerce logo.png" alt="Site Logo" width="512" height="512">
+        <span>Jude Iduh</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="https://judeiduh.github.io/wdd231/">Home</a></li>
+            <li><a href="https://judeiduh.github.io/wdd231/chamber/">Chamber</a></li>
+            <li><a href="https://judeiduh.github.io/wdd231/final/">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My name is Jude Iduh. I’m a sports analysis enthusiast with a love for strategy and patterns—fueled by my passion for football, basketball, and tennis. I’m currently earning my degree online through BYU–Idaho. Having lived in Lagos, Makurdi, Owerri, and now Enugu, I bring diverse life experience to my perspective. I also enjoy writing, tech support, and community engagement. I’m especially interested in how data and performance analytics shape sports outcomes and enhance athlete development. Whether I'm studying match statistics, assisting others with tech solutions, or supporting local initiatives, I find purpose in learning, problem-solving, and making a meaningful impact.</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.png" alt="Headshot of jude Iduh" width="200" height="267"
+                loading="lazy">
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <nav>
+                <ul class="courseFilter">
+                    <li><a href="#" id="all">All Courses</a></li>
+                    <li><a href="#" id="wdd">WDD Courses</a></li>
+                    <li><a href="#" id="cse">CSE Courses</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/judeiduh" target="_blank"><img src="images/Github photo.png" alt="github logo"
+                    width="16" height="16"></a>
+            <a href="https://www.instagram.com/judeiduh/" target="_blank"><img src="images/Instagram.webp"
+                    alt="instagram logo" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/judeiduh/" target="_blank"><img
+                    src="images/Linkedin photo.webp" alt="linkedin logo" width="10" height="10"></a>
+            <a href="https://x.com/judeiduh" target="_blank"><img src="images/twitter-x.webp" alt="twitter-x logo"
+                    width="16" height="16"></a>
+        </div>
+        <p>©<span id="currentyear"></span> 🍔 Jude Iduh 🍔 Enugu
+        </p>
+        <p>Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

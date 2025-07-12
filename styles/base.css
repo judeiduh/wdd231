@@ -1,0 +1,137 @@
+:root {
+    --indigo-dye: #0c4767;
+    --burnt-sienna: #d7816a;
+    --air-superiority-blue: #7ea0b7;
+    --uranian-blue: #a9cef4;
+    --vanilla: #f2f3ae;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+header {
+    background-color: var(--burnt-sienna);
+    border-bottom: 10px solid var(--burnt-sienna);
+}
+
+header h1,
+footer p {
+    color: var(--vanilla);
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: var(--uranian-blue);
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: var(--uranian-blue);
+    color: black;
+    border: 3px solid var(--burnt-sienna);
+    border-radius: 5px;
+}
+
+main {
+    background-color: var(--uranian-blue);
+    color: var(--indigo-dye);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+section {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px auto;
+}
+
+.card1 h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card1 p {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    color: black;
+    padding: 20px;
+}
+
+.card1 img {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    padding: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+.card2 h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card2 p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: black;
+    padding: 20px;
+
+}
+
+.card2 .pic2 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+}
+
+.card2 .pic1 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+}
+
+aside {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--indigo-dye);
+    color: var(--vanilla);
+    text-align: center;
+    border-left: 10px solid var(--burnt-sienna);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer {
+    background-color: var(--burnt-sienna);
+    color: var(--vanilla);
+    text-align: center;
+    border-top: 10px solid var(--burnt-sienna);
+    padding: 10px;
+}
