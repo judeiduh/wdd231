@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urithiru Chamber of Commerce - Home Page</title>
+    <meta name="description"
+        content="This is Jude Iduh's home page for the Chamber of Commerce assignment for WDD 231 at BYUI.">
+    <meta name="author" content="Jude Iduh">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css/normalize.css">
+    <link rel="stylesheet" href="styles.css/chamber.css">
+    <link rel="stylesheet" href="styles.css/chamber-tablet.css">
+    <link rel="stylesheet" href="styles.css/chamber-large.css">
+    <meta property="og:title" content="Anuka Chamber of Commerce - Home Page">
+    <meta property="og:description"
+        content="This is Jude Iduh's home page for the Chamber of Commerce assignment for WDD 231 at BYUI.">
+    <meta property="og:image" content="https://judeiduh.github.io/wdd231/chamber/images/home-screenshot.jpg">
+    <meta property="og:url" content="https://judeiduh.github.io/wdd231/chamber/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Germania+One&display=swap"
+        rel="stylesheet">
+    <script src="scripts.js/getdates.js" defer></script>
+    <script src="scripts.js/navigation.js" defer></script>
+    <script src="scripts.js/weather.js" defer></script>
+    <script src="scripts.js/displayfeatured.js" defer></script>
+    
+    
+</head>
+
+<body>
+    <header>
+        <section class="header-logo">
+            <img src="images/chamber icon.jpg" alt="Anuka Chamber of Commerce Logo" loading="lazy" width="200"
+                height="200">
+            <div class="logo-text">
+                <p class="logo-title">Anuka Chamber of Commerce</p>
+                <p class="logo-motto"><strong>Connecting Series</strong></p>
+            </div>
+        </section>
+        <nav>
+            <button id="myButton" aria-label="Aria Open and close Navigation Links"></button>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home">
+        <section class="hero">
+            <figure>
+                <img src="images/Anuka.webp" alt="Artistic renduring of Anuka Plateau by Ugwu Oma" loading="lazy"
+                    width="600" height="350">
+                <figcaption>Anuka Plateau by Ugwu Oma</figcaption>
+
+            </figure>
+            <a class="join-link" href="join.html">Join Us</a>
+        </section>
+        <h1>Home</h1>
+        <p>Welcome home! You've arrived at the Anuka Chamber of Commerce page. We are connecting all the businesses
+            of Anuka. New to Anuka? Check out our listings. Anuka has so much to offer! New listings are added
+            daily! Grow your business and stay connected. Like what you see and want to be a part of our growing
+            community? Click the join link at the top of the page, or click the "Join Us" link above!</p>
+        <section class="home-cards">
+            <div class="events">
+                <h2>Events</h2>
+                <ul>
+                    <li>Battle of titan: Next update, tomorrow at high noon. Watch two High king heirs battle for the throne of kings!
+                    </li>
+                    <li>Next Milestone projected 5 days from now! Christal chains filling up quick. Don't forget to bring
+                        your surport for exchange!</li>
+                    <li>Anuka Chamber town hall on Saturday an hour before Project disposal</li>
+                    <li>Everstorm predicted 5 days from now!</li>
+                    <li>Oshimiri vs. Agu! Contest of Champions in 10 days!</li>
+                </ul>
+            </div>
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <figure>
+                    <img id="weather-icon" src="#" alt="#">
+                    <figcaption id="weather-description"></figcaption>
+                </figure>
+                <p class="current-temp"></p>
+            </div>
+            <div class="forecast">
+                <h2>Forecast</h2>
+                <p><strong>Today:</strong><span id="weather-today"></span></p>
+                <p><strong>Tomorrow:</strong><span id="weather-tomorrow"></span></p>
+                <p><strong>Next Day:</strong><span id="weather-overtomorrow"></span></p>
+            </div>
+            <div id="spotlight-cards">
+                <h3>Featured Members</h3>
+                <div class="display-spotlight">
+
+                </div>
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-contact">
+            <p>
+                <strong>Anuka Chamber of Commerce</strong>
+            </p>
+            <p>2137 Anuka Way</p>
+            <p>Anuka, Connecting</p>
+            <p>info@Anukacc.org</p>
+            <p>Span Reed: (+234) 8061-792354</p>
+        </section>
+        <section class="socials">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook icon.png" alt="Facebook Icon" loading="lazy" width="16" height="16">
+            </a>
+            <a href="https://www.x.com">
+                <img src="images/twitter-x.webp" alt="Twitter-X Icon" loading="lazy" width="16" height="16">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/Linkedin photo.webp" alt="LinkedIn Icon" loading="lazy" width="16" height="16">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/Instagram.webp" alt="Instagram Icon" loading="lazy" width="16" height="16">
+            </a>
+            <a href="https://www.youtube.com">
+                <img src="images/youtube icon.webp" alt="YouTube Icon" loading="lazy" width="16" height="16">
+            </a>
+        </section>
+
+        <section class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Jude Iduh</p>
+            <p>©<span id ="currentyear"></span> Anuka Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
+
+        <section class="resource-link">
+            <a href="resources.html">Resources</a>
+        </section>
+        
+    </footer>
+</body>
+
+</html>

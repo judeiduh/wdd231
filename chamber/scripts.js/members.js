@@ -1,6 +1,7 @@
 const file = 'data/members.json';
 const cards = document.querySelector('#membership-cards');
 
+
 async function getMembershipData() {
     const response = await fetch(file);
     const data = await response.json();
@@ -9,6 +10,7 @@ async function getMembershipData() {
 }
 
 getMembershipData();
+
 
 const displayMembers = (members) => {
     members.forEach(member => {
@@ -41,3 +43,5 @@ const displayMembers = (members) => {
         cards.appendChild(card);
     });
 }
+
+
