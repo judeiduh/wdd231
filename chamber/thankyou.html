@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Anuka Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining our chamber of commerce">
+    <link rel="stylesheet" href="styles.css/chamber.css">
+    <link rel="stylesheet" href="styles.css/chamber-larger.css">
+    <link rel="stylesheet" href="styles.css/thankyou.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Anuka Chamber of Commerce</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <section class="thankyou-message">
+            <h2>Thank You for Your Application!</h2>
+            <p>We appreciate your interest in joining our chamber of commerce. Here are the details you submitted:</p>
+            
+            <div class="submitted-info">
+                <h3>Personal Information</h3>
+                <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+                <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+                
+                <h3>Business Information</h3>
+                <p><strong>Business Name:</strong> <span id="displayBusinessName"></span></p>
+                <p><strong>Membership Level:</strong> <span id="displayMembershipLevel"></span></p>
+                
+                <h3>Application Details</h3>
+                <p><strong>Submission Date:</strong> <span id="displayTimestamp"></span></p>
+            </div>
+            
+            <p>Our membership team will review your application and contact you within 2 business days.</p>
+            <a href="index.html" class="btn">Return to Home Page</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>2137, Main Street, Anuka</p>
+                <p>info@Anukacc.org</p>
+                <p>(+234) 8061-792354</p>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; <span id="currentYear"></span> Anuka Chamber of Commerce</p>
+                <p>Jude Iduh</p>
+                <p>WDD 231 Project</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js/thankyou.js"></script>
+    <script src="scripts.js/main.js"></script>
+</body>
+</html>
