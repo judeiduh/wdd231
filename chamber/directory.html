@@ -1,23 +1,23 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuka Chamber of Commerce - Directory</title>
+    <title>Anuka Chamber of Commerce - Discover Page</title>
     <meta name="description"
-        content="This is Jude Iduh's directory page for the Chamber of Commerce assignment for WDD 231 at BYUI.">
+        content="This is Jude Iduh's discover page for the Chamber of Commerce assignment for WDD 231 at BYUI.">
     <meta name="author" content="Jude Iduh">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles.css/normalize.css">
     <link rel="stylesheet" href="styles.css/chamber.css">
     <link rel="stylesheet" href="styles.css/chamber-tablet.css">
     <link rel="stylesheet" href="styles.css/chamber-large.css">
-    <meta property="og:title" content="Anuka Chamber of Commerce - Directory">
+    <meta property="og:title" content="Anuka Chamber of Commerce - Discover Page">
     <meta property="og:description"
-        content="This is Jude Iduh's directory page for the Chamber of Commerce assignment for WDD 231 at BYUI.">
-    <meta property="og:image" content="https://judeiduh.github.io/wdd231/chamber/images/directory-screenshot.jpg">
-    <meta property="og:url" content="https://judeiduh.github.io/wdd231/chamber/directory.html">
+        content="This is Jude Iduh's discover page for the Chamber of Commerce assignment for WDD 231 at BYUI.">
+    <meta property="og:image" content="https://judeiduh.github.io/wdd231/chamber/images/discover-screenshot.jpg">
+    <meta property="og:url" content="https://judeiduh.github.io/wdd231/chamber/discover.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Germania+One&display=swap"
@@ -26,6 +26,7 @@
     <script src="scripts.js/navigation.js" defer></script>
     <script src="scripts.js/members.js" defer></script>
     <script src="scripts.js/directory.js" defer></script>
+    <script src="scripts.js/discover.js" defer></script>
 </head>
 
 <body>
@@ -42,30 +43,129 @@
             <button id="myButton" aria-label="Aria Open and close Navigation Links"></button>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a>
+                <li class="active"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
-    <main class="directory">
-        <h1>Anuka Chamber Directory</h1>
-        <p>This page contains an alphabetical listing of our members according to membership level. If you do not see
-            your business listed, please navigate to our join page, and see how you can become a part of our community!
-        </p>
 
-        <div class="display-buttons">
-            <button id="grid-button" aria-label="Aria Grid View"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                    height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
-                    <path
-                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
-                </svg> Grid View</button>
-            <button id="list-button" aria-label="Aria List View">☰ List View</button>
-        </div>
-
-        <div id="membership-cards" class="member-list"></div>
+    <main class="discover">
+        <h1>Discover Anuka</h1>
         
+        <div class="discover-intro">
+            <p>Welcome to Anuka, a vibrant city with a rich history and thriving business community. Founded in 1952, Anuka has grown from a small trading post to a bustling economic hub with a population of over 250,000 residents.</p>
+            <p id="visit-message"></p>
+        </div>
+        
+        <div class="demographics">
+            <h2>Demographics</h2>
+            <ul>
+                <li><strong>Population:</strong> 253,742 (2023 estimate)</li>
+                <li><strong>Median Age:</strong> 34.5 years</li>
+                <li><strong>Household Income:</strong> $62,450 (median)</li>
+                <li><strong>Education:</strong> 42% with bachelor's degree or higher</li>
+                <li><strong>Major Industries:</strong> Technology, Manufacturing, Healthcare, Education</li>
+            </ul>
+        </div>
+        
+        <div class="attractions">
+            <h2>Local Attractions</h2>
+            
+            <div class="attraction-card">
+                <figure>
+                    <img src="images/Anuka park.jpg" data-src="images/anuka-park.jpg" alt="Anuka Central Park" loading="lazy" width="400" height="300">
+                    <figcaption>Anuka Central Park</figcaption>
+                </figure>
+                <p>A 200-acre urban park featuring walking trails, botanical gardens, and outdoor concert venues.</p>
+            </div>
+            
+            <div class="attraction-card">
+                <figure>
+                    <img src="images/Historic museum.jpeg" data-src="images/history-museum.jpg" alt="Anuka History Museum" loading="lazy" width="400" height="300">
+                    <figcaption>Anuka History Museum</figcaption>
+                </figure>
+                <p>Explore the rich cultural heritage of our region through interactive exhibits and historical artifacts.</p>
+            </div>
+            
+            <div class="attraction-card">
+                <figure>
+                    <img src="images/Riverfront.webp" data-src="images/riverfront.jpg" alt="Anuka Riverfront District" loading="lazy" width="400" height="300">
+                    <figcaption>Riverfront District</figcaption>
+                </figure>
+                <p>The revitalized riverfront area features restaurants, shops, and entertainment venues along the scenic Anuka River.</p>
+            </div>
+            
+            <div class="attraction-card">
+                <figure>
+                    <img src="images/Tech Center.webp" data-src="images/tech-center.jpg" alt="Anuka Technology Center" loading="lazy" width="400" height="300">
+                    <figcaption>Technology Innovation Center</figcaption>
+                </figure>
+                <p>Home to dozens of startups and tech companies, driving innovation in our region.</p>
+            </div>
+            
+            <div class="attraction-card">
+                <figure>
+                    <img src="images/Farmers market.jpg" data-src="images/farmers-market.jpg" alt="Anuka Farmers Market" loading="lazy" width="400" height="300">
+                    <figcaption>Anuka Farmers Market</figcaption>
+                </figure>
+                <p>Open year-round with local produce, artisan goods, and community events every Saturday.</p>
+            </div>
+
+             <div class="attraction-card">
+                <figure>
+                    <img src="images/Anuka Art.jpeg" data-src="images/Anuka-art.jpg" alt="Anuka- art Gallery" loading="lazy" width="400" height="300">
+                    <figcaption>Anuka Art Gallery</figcaption>
+                </figure>
+                <p>Showcasing contemporary and traditional artworks from local and international artists.</p>
+            </div>
+
+             <div class="attraction-card">
+                <figure>
+                    <img src="images/Anuka Convention.jpeg" data-src="images/Anuka-Convention.jpg" alt="Anuka-Convention Center" loading="lazy" width="400" height="300">
+                    <figcaption>Anuka Convention Center</figcaption>
+                </figure>
+                <p>State-of-the-art facility hosting conferences, trade shows, and corporate events.</p>
+            </div>
+
+             <div class="attraction-card">
+                <figure>
+                    <img src="images/Anuka Botanical.jpeg" data-src="images/Anuka-Botanical Gardens.jpg" alt="Anuka-Botanical Gardens" loading="lazy" width="400" height="300">
+                    <figcaption>Anuka-Botanical Gardens</figcaption>
+                </figure>
+                <p>Beautifully landscaped gardens featuring native plants and seasonal flower displays.</p>
+            </div>
+
+           
+
+            
+        </div>
+        
+        <div class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Annual Business Expo:</strong> March 15-17, 2024 at Anuka Convention Center</li>
+                <li><strong>Summer Concert Series:</strong> Every Friday in July at Central Park</li>
+                <li><strong>Anuka Food Festival:</strong> September 8-10, 2024 in the Riverfront District</li>
+                <li><strong>Tech Summit:</strong> November 3-5, 2024 at the Technology Innovation Center</li>
+                <li><strong>Holiday Market:</strong> December 1-23, 2024 in Downtown Anuka</li>
+            </ul>
+        </div>
+        
+        <div class="business-environment">
+            <h2>Business Environment</h2>
+            <p>Anuka offers a thriving business climate with:</p>
+            <ul>
+                <li>Low corporate tax rates</li>
+                <li>Skilled workforce</li>
+                <li>Excellent transportation infrastructure</li>
+                <li>Business development grants</li>
+                <li>Incubator programs for startups</li>
+            </ul>
+            <p>The Chamber of Commerce works closely with local government to create a welcoming environment for businesses of all sizes.</p>
+        </div>
     </main>
+
     <footer>
         <section class="footer-contact">
             <p>
@@ -73,8 +173,8 @@
             </p>
             <p>2137 Anuka Way</p>
             <p>Anuka, Series</p>
-            <p>info@anukacc.org</p>
-            <p>Span Reed: (+234) 617-92354</p>
+            <p>info@Anukacc.org</p>
+            <p>Span Reed: (+234) 8061-792354</p>
         </section>
         <section class="socials">
             <a href="https://www.facebook.com">
@@ -93,6 +193,7 @@
                 <img src="images/youtube icon.webp" alt="YouTube Icon" loading="lazy" width="16" height="16">
             </a>
         </section>
+
         <section class="copyright">
             <p>WDD231 Class Project</p>
             <p>Jude Iduh</p>
@@ -100,9 +201,10 @@
             <p>Last Modified: <span id="lastModified"></span></p>
         </section>
 
-
+        <section class="resource-link">
+            <a href="resources.html">Resources</a>
+        </section>
+        
     </footer>
-
 </body>
-
 </html>
