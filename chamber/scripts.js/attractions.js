@@ -1,5 +1,5 @@
 // Fetch and display attraction cards from JSON data
-fetch('data/attractions.json')
+fetch('../data/attractions.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('attractions-container');
