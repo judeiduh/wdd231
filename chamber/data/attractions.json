@@ -3,56 +3,56 @@
         "name": "Anuka Central Park",
         "address": "100 Park Avenue, Anuka",
         "description": "A 200-acre urban park featuring walking trails, botanical gardens, and outdoor concert venues.",
-        "image": "images/attractions/Anuka park.jpg",
+        "image": "../images/attractions/Anuka park.jpg",
         "alt": "Anuka Central Park with walking trails and green spaces"
     },
     {
         "name": "Anuka History Museum",
         "address": "45 Heritage Lane, Anuka",
         "description": "Explore the rich cultural heritage of our region through interactive exhibits and historical artifacts.",
-        "image": "images/attractions/Historic museum.jpeg",
+        "image": "../images/attractions/Historic museum.jpeg",
         "alt": "Anuka History Museum building exterior"
     },
     {
         "name": "Riverfront District",
         "address": "300 Riverside Drive, Anuka",
         "description": "The revitalized riverfront area features restaurants, shops, and entertainment venues along the scenic Anuka River.",
-        "image": "images/attractions/Riverfront.webp",
+        "image": "../images/attractions/Riverfront.webp",
         "alt": "Anuka Riverfront with shops and restaurants"
     },
     {
         "name": "Technology Innovation Center",
         "address": "500 Tech Way, Anuka",
         "description": "Home to dozens of startups and tech companies, driving innovation in our region.",
-        "image": "images/attractions/Tech Center.webp",
+        "image": "../images/attractions/Tech Center.webp",
         "alt": "Modern technology center building"
     },
     {
         "name": "Anuka Farmers Market",
         "address": "75 Market Street, Anuka",
         "description": "Open year-round with local produce, artisan goods, and community events every Saturday.",
-        "image": "images/attractions/Farmers market.jpg",
+        "image": "../images/attractions/Farmers market.jpg",
         "alt": "Busy farmers market with vendors"
     },
     {
         "name": "Anuka Art Gallery",
         "address": "220 Creative Blvd, Anuka",
         "description": "Showcasing contemporary and traditional artworks from local and international artists.",
-        "image": "images/attractions/Anuka Art.jpeg",
+        "image": "../images/attractions/Anuka Art.jpeg",
         "alt": "Art gallery interior with paintings"
     },
     {
         "name": "Anuka Convention Center",
         "address": "800 Business Circle, Anuka",
         "description": "State-of-the-art facility hosting conferences, trade shows, and corporate events.",
-        "image": "images/attractions/Anuka Convention.jpeg",
+        "image": "../images/attractions/Anuka Convention.jpeg",
         "alt": "Modern convention center exterior"
     },
     {
         "name": "Anuka Botanical Gardens",
         "address": "150 Greenway Road, Anuka",
         "description": "Beautifully landscaped gardens featuring native plants and seasonal flower displays.",
-        "image": "images/attractions/Anuka Botanical.jpeg",
+        "image": "../images/attractions/Anuka Botanical.jpeg",
         "alt": "Colorful botanical garden pathways"
     }
 ]
